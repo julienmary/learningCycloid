@@ -23,11 +23,11 @@ module "vm" {
 
   ]
 
-  egress_allow_protocol = ""
+  egress_allow_protocol = "all"
   egress_destination_ranges = [
 
   ]
-  egress_disabled      = true
+  egress_disabled      = false
   egress_firewall_name = "juliencycloidegress"
   env                  = var.env
   file_content         = ""
