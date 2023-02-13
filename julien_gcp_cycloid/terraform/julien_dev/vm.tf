@@ -19,30 +19,40 @@ module "vm" {
   boot_disk_size            = 5
   boot_disk_type            = "pd-standard"
   customer                  = var.customer
-  egress_allow_ports        = []
+  egress_allow_ports = [
 
+  ]
 
   egress_allow_protocol = ""
   egress_destination_ranges = [
 
   ]
   egress_disabled      = true
-  egress_firewall_name = ""
+  egress_firewall_name = "juliencycloidegress"
   env                  = var.env
   file_content         = ""
-  ingress_allow_ports  = ["22"]
-
+  ingress_allow_ports = [
+    "22"
+  ]
 
   ingress_allow_protocol = "tcp"
   ingress_disabled       = false
-  ingress_firewall_name  = "${var.customer}-${var.project}-${var.env}-ingress"
-  ingress_source_ranges  = []
+  ingress_firewall_name  = "juliencycloidingress"
+  ingress_source_ranges = [
 
-  ingress_source_tags = []
+  ]
 
-  instance_extra_labels = {}
-  instance_name         = "${var.customer}-${var.project}-${var.env}-vm"
-  instance_tags         = ["${var.customer}-${var.project}-${var.env}-network-tag"]
+  ingress_source_tags = [
+
+  ]
+
+  instance_extra_labels = {
+  }
+
+  instance_name = "${var.customer}-${var.project}-${var.env}-vm"
+  instance_tags = [
+    "${var.customer}-${var.project}-${var.env}-network-tag"
+  ]
 
   machine_type = "e2-small"
   network      = " accenture-lab-cycloid-workers-accenture-lab-prod-network "
