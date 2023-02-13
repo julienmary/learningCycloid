@@ -55,7 +55,7 @@ module "vm" {
   ]
 
   machine_type = "e2-small"
-  network      = " accenture-lab-cycloid-workers-accenture-lab-prod-network "
+  network      = "accenture-lab-cycloid-workers-accenture-lab-prod-network"
   network_ip   = ""
   project      = var.project
 }
