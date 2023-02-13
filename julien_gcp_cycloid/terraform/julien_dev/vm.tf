@@ -51,7 +51,7 @@ module "vm" {
 
   instance_name = "${var.customer}-${var.project}-${var.env}-vm"
   instance_tags = [
-    "${var.customer}-${var.project}-${var.env}-network-tag"
+    "julien-learning-cycloid"
   ]
 
   machine_type = "e2-small"
