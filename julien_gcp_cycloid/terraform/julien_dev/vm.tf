@@ -49,7 +49,7 @@ module "vm" {
   instance_extra_labels = {
   }
 
-  instance_name = "${var.customer}-${var.project}-${var.env}-vm"
+  instance_name = "Learning-Cycloid"
   instance_tags = [
     "julien-learning-cycloid"
   ]
