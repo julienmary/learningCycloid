@@ -23,7 +23,7 @@ module "vm" {
 
   ]
 
-  egress_allow_protocol = [ "all" ]
+  egress_allow_protocol = "all"
   egress_destination_ranges = [
 
   ]
