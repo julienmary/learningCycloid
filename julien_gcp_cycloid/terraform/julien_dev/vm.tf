@@ -16,7 +16,7 @@ module "vm" {
   boot_disk_auto_delete     = true
   boot_disk_device_name     = ""
   boot_disk_image           = "debian-cloud/debian-10"
-  boot_disk_size            = 5
+  boot_disk_size            = 10
   boot_disk_type            = "pd-standard"
   customer                  = var.customer
   egress_allow_ports = [
