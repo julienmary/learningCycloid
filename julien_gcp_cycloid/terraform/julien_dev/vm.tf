@@ -49,7 +49,7 @@ module "vm" {
   instance_extra_labels = {
   }
 
-  instance_name = "Learning-Cycloid"
+  instance_name = "learning-cycloid"
   instance_tags = [
     "julien-learning-cycloid"
   ]
